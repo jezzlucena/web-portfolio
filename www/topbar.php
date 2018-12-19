@@ -5,8 +5,6 @@
     </div>
 
     <div class="navContainer">
-      <a class="topLink">Professional Experience</a>
-      <a class="topLink">Skills</a>
       <a class="topLink">Resumé</a>
       <a class="topLink">Hire</a>
       <a data-mfp-src="#wufoo-z1r9mbuj1s84ckr" class="topLink contact">Contact</a>

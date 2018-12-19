@@ -29,7 +29,7 @@
 
 		<div class="content">
 			<div id="about" class="section team">
-				<div class="textContainer left">
+				<div class="textContainer">
 					<div class="description">
 						<a class="profilePicture Jezz" target="_blank" href="http://linkedin.com/in/jezzlucena"></a>
 						<div class="profileName">Jesiel Lucena</div>
@@ -40,16 +40,14 @@
 							<span class="keyword">UX/UI Design,</span>
 							<span class="keyword">REST APIs,</span>
 							<span class="keyword">i18n</span>
-						</span><br><br>
-						<ul>
-							<li>BSc in Computer Engineering from Universidade Federal do Rio Grande do Norte (2013)</li>
-							<li>MSc in Interactive Media and Game Development from Worcester Polytechnic Institute (2016)</li>
-						</ul>
+						</span>
+						<div class="profileButtons">
+							<a href="" class="button">View LinkedIn</a>
+							<a href="" class="button">Download Resumé (.pdf)</a>
+						</div>
 					</div>
-					<a href="" class="button">LinkedIn</a>
-					<a href="" class="button">Resumé (.pdf)</a>
 				</div>
-				<div class="textContainer right">
+				<div class="textContainer">
 					Building magical end-user experiences is my true passion. I actively seek out new technologies, and stay up-to-date on the industry's most recent frameworks, languages and trends.<br><br>
 					With a Bachelor’s degree in Computer Engineering and a Master’s degree in Interactive Media & Game Development, continued education has allowed me to stay ahead of the curve and deliver exceptional work to each employer I’ve worked for - both full-time and contract.<br><br>
 					My technical expertise includes cross-platform proficiency (Mac OS, Unix, Linux and Windows); expertise in 13 scripting/programming languages (including ES6, CSS3, HTML5, Phoenix/Elixir and PostgreSQL); and advanced knowledge of developer applications, tools, methodologies and best practices (including OOD, client/server architecture and self-test automation).

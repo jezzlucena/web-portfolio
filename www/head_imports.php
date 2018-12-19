@@ -10,12 +10,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
 
-<script type="text/javascript" charset="UTF-8" src="common/plugin/jquery.js"></script>
-<script type="text/javascript" charset="UTF-8" src="common/plugin/jquery.animate-enhanced.js"></script>
-<script type="text/javascript" charset="UTF-8" src="common/plugin/jquery.scrollTo.min.js"></script>
+<script type="text/javascript" charset="UTF-8" src="js/plugin/jquery.js"></script>
+<script type="text/javascript" charset="UTF-8" src="js/plugin/jquery.animate-enhanced.js"></script>
+<script type="text/javascript" charset="UTF-8" src="js/plugin/jquery.scrollTo.min.js"></script>
 
-<script type="text/javascript" charset="UTF-8" src="common/plugin/jquery.magnific-popup.min.js"></script>
-<link rel="stylesheet" href="common/plugin/magnific-popup.css" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="js/plugin/jquery.magnific-popup.min.js"></script>
+<link rel="stylesheet" href="js/plugin/magnific-popup.css" type="text/css">
 
-<script type="text/javascript" charset="UTF-8" src="common/Main.js"></script>
-<link rel="stylesheet" href="common/Main.css" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="js/Main.js"></script>
+<link rel="stylesheet" href="css/Main.css" type="text/css">
