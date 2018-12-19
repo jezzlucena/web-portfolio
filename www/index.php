@@ -22,8 +22,8 @@
 		<div class="header"></div>
 		<div class="headerContent">
 			<div class="text">
-				<span>Jesiel Lucena's</span>
-				<span class="title">Portfolio</span>
+				<span>Jesiel Lucena</span>
+				<span class="title">Front End Engineer</span>
 			</div>
 		</div>
 
@@ -58,7 +58,7 @@
 			<div id="author" class="section expertise">
 				<div class="title break">Professional Experience</div>
 
-				<div class="title break">UX/UI Demos</div>
+				<div class="title break">Some of my latest work</div>
 
 				<div style="clear: both;"></div>
 			</div>

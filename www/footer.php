@@ -6,7 +6,8 @@
     <br/>
     <a data-mfp-src="#wufoo-z1r9mbuj1s84ckr" class="button contactButton">Hire</a>
     <br/>
-    <div class="emailText">or reach out directly at <b>jezzlucena@gmail.com</b></div>
+    <br/>
+    <div class="emailText">...or reach out directly at <b>jezzlucena@gmail.com</b></div>
   </div>
 </div>
 

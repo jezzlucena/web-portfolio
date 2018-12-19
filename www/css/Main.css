@@ -95,11 +95,11 @@ a:link, a:visited{
 }
 
 	.content .button:hover{
-		box-shadow: 5px 5px 0 -1px rgba(255, 255, 255, 1);
+		box-shadow: 7px 7px 0 -1px rgba(0, 0, 0, 1);
 	}
 
-	.button:hover{
-		box-shadow: 5px 5px 0 -1px rgba(0, 0, 0, 1);
+	.buttonAreaWrapper .button:hover{
+		box-shadow: 5px 5px 0 -1px rgba(255, 255, 255, 1);
 	}
 
 	.button:active{
@@ -226,12 +226,22 @@ a:link, a:visited{
 
 		.topBar .topLogoText{
 			display: inline-block;
+			font-family: myriad-cond;
 			white-space: nowrap;
-			letter-spacing: 2px;
+			letter-spacing: 3px;
+			line-height: 18px;
 			transform: translate(-20px);
 			opacity: 0;
 			transition: 1.5s transform ease, 1s opacity ease;
+			text-transform: uppercase;
 		}
+
+			.topBar .topLogoText .title{
+				font-family: myriad-boldcond;
+				border-left: 1px solid white;
+				padding-left: 10px;
+			}
+
 			.foldPassed .topBar .topLogoText{
 				transform: translate(0);
 				opacity: 1;
@@ -319,14 +329,13 @@ a:link, a:visited{
 		bottom: 5%;
 		margin-bottom: 30px;
 		width: 100%;
-		font-size: 18px;
-		line-height: 26px;
+		font-size: 24px;
+		line-height: 30px;
 		font-family: myriad-cond;
 		color: white;
 		letter-spacing: 7px;
-		padding: 4px 0 2px;
+		padding: 20px 0 20px;
 		background-color: rgba(0, 0, 0, 0.85);
-		border: 1px 0 1px 0 solid white;
 		text-align: center;
 		text-transform: uppercase;
 		pointer-events: none;
@@ -342,6 +351,8 @@ a:link, a:visited{
 
 	.headerContent .text .title{
 		font-family: myriad-boldcond;
+		border-left: 1px solid white;
+		padding-left: 15px;
 	}
 
 	.headerContent .play{
@@ -381,70 +392,11 @@ a:link, a:visited{
 		display: none;
 	}
 
-.playerBar{
-	position: absolute;
-	/*display: table;*/
-	display: none;
-	top: 0;
-	width: 100%;
-	height: 40px;
-	white-space: nowrap;
-	text-align: center;
-}
-
-	.playerBar *{
-		display: inline-block;
-		height: 100%;
-		width: 60px;
-		border: 1px solid white;
-		margin-top: -1px;
-		background-size: 50%;
-		background-position: center center;
-		background-repeat: no-repeat;
-		cursor: pointer;
-		opacity: 0.8;
-		background-color: #0099e8;
-		transition: all 0.2s linear;
-	}
-
-	.playerBar *:not(:first-child){
-		border-left: 0px;
-	}
-
-	.playerBar *:hover{
-		box-shadow: 0px 7px 0 -2px rgba(255, 255, 255, 0.75);
-	}
-
-	.playerBar *:first-child:hover{
-		box-shadow: -5px 5px 0 -1px rgba(255, 255, 255, 0.75);
-	}
-
-	.playerBar *:last-child:hover{
-		box-shadow: 5px 5px 0 -1px rgba(255, 255, 255, 0.75);
-	}
-
-	.playerBar .prev{
-		background-image: url('../img/player/prev.png');
-	}
-
-	.playerBar .playPause{
-		background-image: url('../img/player/play.png');
-	}
-
-	.playerBar .playPause.playing{
-		background-image: url('../img/player/pause.png');
-		background-size: 60%;
-	}
-
-	.playerBar .next{
-		background-image: url('../img/player/next.png');
-	}
-
 .content{
 	position: relative;
-	background-color: black;
+	background-color: white;
 	width: 100%;
-	color: white;
+	color: black;
 	border-top: 1px solid white;
 	padding-bottom: 30px;
 	z-index: 99;
@@ -565,14 +517,15 @@ a:link, a:visited{
 
 		.content .section .title{
 			font-family: opensans-bold;
-			font-size: 24px;
+			font-size: 18px;
 			margin-bottom: 20px;
+			text-transform: uppercase;
 		}
 
 			.content .section .title.break{
 				text-align: center;
-				border-top: 1px solid white;
-				border-bottom: 1px solid white;
+				border-top: 1px solid black;
+				border-bottom: 1px solid black;
 				line-height: 70px;
 			}
 
@@ -639,8 +592,8 @@ a:link, a:visited{
 	.content .buttonAreaWrapper{
 		padding: 50px 0;
 		border-top: 1px solid white;
-		background-color: white;
-		color: black;
+		background-color: black;
+		color: white;
 	}
 
 		.content .buttonAreaWrapper .button{
@@ -653,11 +606,12 @@ a:link, a:visited{
 		font-family: opensans;
 		width: 100%;
 		text-align: center;
-		margin: 10px 0;
+		padding: 10px 0;
+		font-size: 14px;
 	}
 
 	.content .disclaimer *:link{
-		color: white;
+		color: black;
 		text-decoration: underline;
 	}
 
