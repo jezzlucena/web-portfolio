@@ -1,15 +1,16 @@
 <div class="buttonAreaWrapper">
   <div class="buttonArea">
-    <a class="button" target="_blank" href="http://linkedin.com/in/christophercladd">Chris's LinkedIn</a>
-    <a class="button" target="_blank" href="http://linkedin.com/in/jezzlucena">Jezz's LinkedIn</a>
+    <a class="button" target="_blank" href="http://linkedin.com/in/jezzlucena">LinkedIn</a>
+    <a class="button" target="_blank" href="http://linkedin.com/in/jezzlucena">GitHub</a>
+    <a class="button" target="_blank" href="http://linkedin.com/in/jezzlucena">Behance</a>
     <br/>
-    <a data-mfp-src="#wufoo-z1r9mbuj1s84ckr" class="button contactButton">Contact Us</a>
+    <a data-mfp-src="#wufoo-z1r9mbuj1s84ckr" class="button contactButton">Hire</a>
     <br/>
-    <div class="emailText">or email us at <b>studiokegel@gmail.com</b></div>
+    <div class="emailText">or reach out directly at <b>jezzlucena@gmail.com</b></div>
   </div>
 </div>
 
-<div class="disclaimer">Creative Commons Attribution-ShareAlike License 2018<br/>Studio Kegel. <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Some Rights Reserved</a>.</div>
+<div class="disclaimer">Creative Commons Attribution-ShareAlike License<br/>Last updated in <?php echo date("F Y", strtotime("-2 weeks")); ?>. <a target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/2.0/">Some Rights Reserved</a>.</div>
 
 <div id="wufoo-z1r9mbuj1s84ckr" class="modalPopup contactPopup mfp-hide">
   Fill out my <a href="https://jezzlucena.wufoo.com/forms/z1r9mbuj1s84ckr">online form</a>.
