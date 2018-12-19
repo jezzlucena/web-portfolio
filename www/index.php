@@ -43,7 +43,7 @@
 						</span>
 						<div class="profileButtons">
 							<a href="" class="button">View LinkedIn</a>
-							<a href="" class="button">Download Resumé (.pdf)</a>
+							<a href="" class="button">Download Resumé</a>
 						</div>
 					</div>
 				</div>

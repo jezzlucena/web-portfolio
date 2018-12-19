@@ -3,7 +3,7 @@
     <div class="logoContainer">
       <a href="/" class="topLogo"><span class="topLogoText">
         <span>Jesiel Lucena</span>
-        <span class="title">Front End Engineer</span>
+        <span class="titleWrapper"><span class="title">Front End Engineer</span></span>
       </span></a>
     </div>
 

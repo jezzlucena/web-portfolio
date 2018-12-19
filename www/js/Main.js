@@ -22,7 +22,7 @@ Main.triggerScrollClasses = function(){
 	let windowHeight = window.innerHeight;
 
 	$('body').toggleClass('scrolled', (scrollTop > 0));
-	$('body').toggleClass('foldPassed', (scrollTop > windowHeight/2));
+	$('body').toggleClass('foldPassed', (scrollTop > windowHeight/3));
 
 	$('.trigger').each(function(index){
 		if($(this).isOnScreen()){

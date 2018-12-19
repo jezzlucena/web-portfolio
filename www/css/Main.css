@@ -79,13 +79,14 @@ a:link, a:visited{
 	display: inline-block;
 	font-family: opensans;
 	text-transform: none;
+	font-weight: bold;
 	height: 30px;
 	line-height: 30px;
 	padding: 0 30px;
 	margin: 10px;
 	margin-right: 5px;
 	font-size: 14px;
-	letter-spacing: 0px;
+	letter-spacing: 1px;
 	color: black;
 	background-color: black;
 	border: 1px solid white;
@@ -188,6 +189,7 @@ a:link, a:visited{
 	background-color: transparent;
 	color: white;
 	z-index: 100;
+	font-family: myriad-cond;
 	transition: 0.5s background-color ease, 0.5s border-bottom ease;
 }
 	.scrolled .topBar{
@@ -201,52 +203,66 @@ a:link, a:visited{
 	.topBar .topBarContent{
 		position: relative;
 		width: 100%;
-		max-width: 1280px;
+		max-width: 900px;
 		margin: 0 auto;
 	}
 
 	.topBar .logoContainer .topLogo{
 		position: absolute;
 		top: 0px; left: 20px;
-		height: 50px;
+		height: 60px;
 		width: 200px;
 		line-height: 60px;
 		padding-left: 55px;
 		opacity: 0;
 		background-position: left 10px;
 		background-repeat: no-repeat;
-		background-size: auto 70%;
-		background-image: url('../img/common/logo.jpg');
+		background-size: auto 60%;
+		background-image: url('../img/common/logo.png');
 		transition: 0.5s opacity ease;
 	}
 		.foldPassed .topBar .logoContainer .topLogo{
 			opacity: 1;
-			transition-delay: 0.5s;
 		}
 
 		.topBar .topLogoText{
 			display: inline-block;
-			font-family: myriad-cond;
 			white-space: nowrap;
-			letter-spacing: 3px;
+			letter-spacing: 2px;
 			line-height: 18px;
-			transform: translate(-20px);
-			opacity: 0;
-			transition: 1.5s transform ease, 1s opacity ease;
 			text-transform: uppercase;
+			font-size: 16px;
+			opacity: 0;
+			transition: 1s opacity ease;
 		}
-
-			.topBar .topLogoText .title{
-				font-family: myriad-boldcond;
-				border-left: 1px solid white;
-				padding-left: 10px;
-			}
-
 			.foldPassed .topBar .topLogoText{
-				transform: translate(0);
 				opacity: 1;
-				transition-delay: 0.5s, 0.7s;
+				transition: 1.5s opacity ease;
 			}
+
+			.topBar .topLogoText .titleWrapper{
+				position: relative;
+				font-family: myriad-boldcond;
+				padding-left: 10px;
+				margin-left: 5px;
+			}
+				.topBar .topLogoText .titleWrapper::after{
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 0;
+					height: 30px;
+					border-right: 1px solid white;
+					transform: translateY(-50%);
+				}
+					.topBar .topLogoText .title{
+						opacity: 0;
+						transition: 1.5s opacity ease;
+					}
+						.foldPassed .topBar .topLogoText .title{
+							opacity: 1;
+							transition-delay: 0.5s;
+						}
 
 	.topBar .navContainer{
 		position: absolute;
@@ -259,14 +275,17 @@ a:link, a:visited{
 			line-height: 60px;
 			cursor: pointer;
 			text-transform: uppercase;
+			font-weight: bold;
 			font-size: 14px;
+			margin-right: -6px;
+			letter-spacing: 2px;
 		}
 			.topBar .navContainer .topLink:not(:last-child)::after{
 				content: '';
 				position: absolute;
 				top: 50%;
 				right: 0;
-				height: 20px;
+				height: 30px;
 				border-right: 1px solid white;
 				transform: translateY(-50%);
 			}
@@ -296,15 +315,9 @@ a:link, a:visited{
 }
 
 	@media(max-width: 800px){
-		.videoContainer{
-			position: absolute;
-			display: none;
-		}
-
 		.header{
 			position: absolute;
-			background-size: 60% auto;
-			background-position: 50% 20%;
+			background-size: auto 60%;
 		}
 	}
 
@@ -326,14 +339,14 @@ a:link, a:visited{
 
 	.headerContent .text{
 		position: absolute;
-		bottom: 5%;
-		margin-bottom: 30px;
+		bottom: 0;
+		margin-bottom: 20px;
 		width: 100%;
 		font-size: 24px;
 		line-height: 30px;
 		font-family: myriad-cond;
 		color: white;
-		letter-spacing: 7px;
+		letter-spacing: 3px;
 		padding: 20px 0 20px;
 		background-color: rgba(0, 0, 0, 0.85);
 		text-align: center;
@@ -350,10 +363,20 @@ a:link, a:visited{
 		}
 
 	.headerContent .text .title{
+		position: relative;
 		font-family: myriad-boldcond;
-		border-left: 1px solid white;
 		padding-left: 15px;
+		margin-left: 5px;
 	}
+		.headerContent .text .title::after{
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			height: 40px;
+			border-right: 1px solid white;
+			transform: translateY(-50%);
+		}
 
 	.headerContent .play{
 		position: absolute;
@@ -412,7 +435,7 @@ a:link, a:visited{
 
 	.content .section{
 		width: 90%;
-		max-width: 1280px;
+		max-width: 900px;
 		margin: 50px auto;
 	}
 
@@ -523,6 +546,8 @@ a:link, a:visited{
 		}
 
 			.content .section .title.break{
+				font-family: myriad-boldcond;
+				letter-spacing: 2px;
 				text-align: center;
 				border-top: 1px solid black;
 				border-bottom: 1px solid black;
