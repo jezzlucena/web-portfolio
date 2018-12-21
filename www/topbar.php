@@ -8,9 +8,9 @@
     </div>
 
     <div class="navContainer">
-      <a class="topLink">About</a>
-      <a class="topLink">Portfolio</a>
-      <a data-mfp-src="#wufoo-z1r9mbuj1s84ckr" class="topLink contact">Contact</a>
+      <a class="topLink" href="about.php" data-page="about">About</a>
+      <a class="topLink" href="/" data-page="portfolio">Portfolio</a>
+      <a class="topLink" href="contact.php" data-page="contact" data-mfp-src="#wufoo-z1r9mbuj1s84ckr">Contact</a>
     </div>
   </div>
 </div>

@@ -19,3 +19,5 @@
 
 <script type="text/javascript" charset="UTF-8" src="js/Main.js"></script>
 <link rel="stylesheet" href="css/Main.css" type="text/css">
+
+<link rel="stylesheet" href="css/gallery.css" type="text/css">
