@@ -806,7 +806,7 @@
 				</div>
 
 				<div class="gallery grid loading">
-					<a href="#" target="_blank" class="item template">
+					<a href="#" target="_blank" class="item trigger template">
 						<div class="thumbContainer">
 							<img class="thumbGif"></img>
 							<img class="thumb"></img>

@@ -42,8 +42,6 @@ Main.triggerScrollClasses = function(){
 	$('.trigger').each(function(index){
 		if($(this).isOnScreen()){
 			$(this).addClass('triggered');
-		} else {
-			$(this).removeClass('triggered');
 		}
 	});
 }
