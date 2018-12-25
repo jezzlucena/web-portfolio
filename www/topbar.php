@@ -10,6 +10,7 @@
     <div class="navContainer">
       <a class="topLink" href="about.php" data-page="about">About</a>
       <a class="topLink" href="/" data-page="portfolio">Portfolio</a>
+      <a class="topLink" href="resource/JezzLucenaResume2018.pdf" target="_blank" data-page="about">Resume</a>
       <a class="topLink" href="contact.php" data-page="contact" data-mfp-src="#wufoo-z1r9mbuj1s84ckr">Contact</a>
     </div>
   </div>

@@ -49,7 +49,7 @@
 							<span class="keyword">i18n</span>
 						</span>
 						<div class="profileButtons">
-							<a href="resource/JezzLucena_Resume.pdf" class="button">Download Resumé (pdf)</a>
+							<a href="resource/JezzLucenaResume2018.pdf" target="_blank" class="button">Download Resumé (pdf)</a>
 						</div>
 					</div>
 				</div>
