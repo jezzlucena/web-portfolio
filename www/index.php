@@ -2,14 +2,14 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<title>Jesiel Lucena's Portfolio</title>
+		<title>Portfolio - Jezz Lucena</title>
 		<link rel="shortcut icon" href="favicon.ico" />
 		<meta name="description" content="TODO"/>
 
-		<meta property="og:title" content="Portfolio - Jesiel Lucena"/>
+		<meta property="og:title" content="Portfolio - Jezz Lucena"/>
 		<meta property="og:url" content="http://jezzlucena.com/"/>
 		<meta property="og:image" content="http://jezzlucena.com/resource/common/profile.jpg"/>
-		<meta property="og:site_name" content="Portfolio - Jesiel Lucena"/>
+		<meta property="og:site_name" content="Portfolio - Jezz Lucena"/>
 		<meta property="og:description" content="TODO"/>
 
 		<?php include 'head_imports.php'; ?>
@@ -789,7 +789,7 @@
 		</div>
 		<div class="headerContent">
 			<div class="text">
-				<span>Jesiel Lucena</span>
+				<span>Jezz Lucena</span>
 				<span class="title">Front End Engineer</span>
 			</div>
 		</div>
@@ -807,7 +807,7 @@
 
 				<div class="gallery grid loading">
 					<a href="#" target="_blank" class="item trigger template">
-						<div class="thumbContainer">
+						<div class="thumbContainer loadingGradient">
 							<img class="thumbGif"></img>
 							<img class="thumb"></img>
 						</div>

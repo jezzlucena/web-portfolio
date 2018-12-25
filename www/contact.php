@@ -6,10 +6,10 @@
 		<link rel="shortcut icon" href="favicon.ico" />
 		<meta name="description" content="TODO"/>
 
-		<meta property="og:title" content="Portfolio - Jesiel Lucena"/>
+		<meta property="og:title" content="Portfolio - Jezz Lucena"/>
 		<meta property="og:url" content="http://jezzlucena.com/"/>
 		<meta property="og:image" content="http://jezzlucena.com/resource/common/profile.jpg"/>
-		<meta property="og:site_name" content="Portfolio - Jesiel Lucena"/>
+		<meta property="og:site_name" content="Portfolio - Jezz Lucena"/>
 		<meta property="og:description" content="TODO"/>
 
 		<script type="text/javascript" src="http://www.youtube.com/iframe_api"></script>
@@ -22,7 +22,7 @@
 		<div class="header"></div>
 		<div class="headerContent">
 			<div class="text">
-				<span>Jesiel Lucena</span>
+				<span>Jezz Lucena</span>
 				<span class="title">Contact Me</span>
 			</div>
 		</div>

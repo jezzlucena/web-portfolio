@@ -6,10 +6,10 @@
 		<link rel="shortcut icon" href="favicon.ico" />
 		<meta name="description" content="TODO"/>
 
-		<meta property="og:title" content="Portfolio - Jesiel Lucena"/>
+		<meta property="og:title" content="Portfolio - Jezz Lucena"/>
 		<meta property="og:url" content="http://jezzlucena.com/"/>
 		<meta property="og:image" content="http://jezzlucena.com/resource/common/profile.jpg"/>
-		<meta property="og:site_name" content="Portfolio - Jesiel Lucena"/>
+		<meta property="og:site_name" content="Portfolio - Jezz Lucena"/>
 		<meta property="og:description" content="TODO"/>
 
 		<script type="text/javascript" src="http://www.youtube.com/iframe_api"></script>
@@ -22,7 +22,7 @@
 		<div class="header"></div>
 		<div class="headerContent">
 			<div class="text">
-				<span>Jesiel Lucena</span>
+				<span>Jezz Lucena</span>
 				<span class="title">About Me</span>
 			</div>
 		</div>
@@ -32,7 +32,7 @@
 				<div class="textContainer">
 					<div class="description">
 						<a class="profilePicture Jezz" target="_blank" href="http://linkedin.com/in/jezzlucena"></a>
-						<div class="profileName">Jesiel Lucena</div>
+						<div class="profileName">Jezz Lucena</div>
 						<div class="profileTitle">Front-End Software Engineer</div>
 						<span class="keywords">
 							<span class="label">Keywords: </span>
@@ -49,7 +49,7 @@
 							<span class="keyword">i18n</span>
 						</span>
 						<div class="profileButtons">
-							<a href="resource/JesielLucena_Resume.pdf" class="button">Download Resumé (pdf)</a>
+							<a href="resource/JezzLucena_Resume.pdf" class="button">Download Resumé (pdf)</a>
 						</div>
 					</div>
 				</div>
@@ -77,7 +77,7 @@
 							<div class="author">Chris Bennet</div>
 							<div class="role">CEO at Wonderschool, Inc.</div>
 						</a>
-						<div class="connection">Chris was senior to Jesiel at Wonderschool</div>
+						<div class="connection">Chris was senior to Jezz at Wonderschool</div>
 					</div>
 
 					<div class="testimonial">
