@@ -33,6 +33,7 @@
       flex-direction: column;
       width: 245px;
       margin: 0 auto 20px;
+      cursor: pointer;
     }
 
     .gallery .thumbContainer {
@@ -70,10 +71,10 @@
           transition-delay: 1.5s;
         }
 
-          .gallery .item.triggered:hover .thumbContainer .thumb {
+          /* .gallery .item.triggered:hover .thumbContainer .thumb {
             opacity: 0;
             transition-delay: 0s;
-          }
+          } */
 
     .gallery .detailsContainer {
       position: relative;
@@ -94,12 +95,12 @@
         outline: none;
         transform-origin: top right;
         transform: scale(0.7);
+        display: none;
       }
         .gallery.grid .moreBtn {
           transform: scale(0.5);
         }
         .gallery .moreBtn::before {
-          display: none;
           position: absolute;
           top: 50%;
           left: 50%;
