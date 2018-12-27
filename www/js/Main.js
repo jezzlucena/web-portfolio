@@ -22,6 +22,10 @@ Main.onLoad = function(){
 		Main.triggerScrollClasses();
 	});
 
+	$(window).resize(function(){
+		Main.triggerScrollClasses();
+	});
+
 	Main.triggerScrollClasses();
 
 	setTimeout(() => {
