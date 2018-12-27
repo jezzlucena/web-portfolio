@@ -109,11 +109,7 @@
         outline: none;
         transform-origin: top right;
         transform: scale(0.7);
-        display: none;
       }
-        .gallery.grid .moreBtn {
-          transform: scale(0.5);
-        }
         .gallery .moreBtn::before {
           position: absolute;
           top: 50%;
@@ -155,6 +151,50 @@
           border-radius: 50%;
           box-shadow: 0 0 0 2px black, 0 11px 0 2px black, 0 -11px 0 2px black;
         }
+
+        @media(max-width: 600px) {
+          .gallery .moreBtn {
+            opacity: 0.7;
+            background-color: transparent;
+            transform: scale(0.6);
+          }
+
+          .gallery.grid .moreBtn {
+            margin-right: -5px;
+          }
+        }
+
+        .gallery .moreDropdown {
+          position: absolute;
+          top: 10px;
+          right: 0;
+          opacity: 0;
+          background-color: white;
+          border: 1px solid black;
+          pointer-events: none;
+          transition: 0.5s opacity ease;
+          z-index: 100;
+        }
+          .gallery .moreDropdown.open {
+            pointer-events: auto;
+            opacity: 1;
+          }
+
+          .gallery .moreDropdown .moreLink {
+            padding: 15px 20px;
+            margin: 0;
+          }
+            .gallery .moreDropdown .moreLink:not(:last-child) {
+              padding-bottom: 5px;
+            }
+
+            .gallery .moreDropdown .moreLink.disabled {
+              color: #ddd;
+            }
+
+            .gallery .moreDropdown .moreLink:not(.disabled)::after {
+              content: ' \01F517';
+            }
 
         .gallery .detailsContainer .name {
           font-size: 18px;

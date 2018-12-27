@@ -811,6 +811,7 @@
 							<img class="thumbGif"></img>
 							<img class="thumb"></img>
 						</div>
+
 						<div class="detailsContainer">
 							<div class="name"></div>
 							<div class="subtitle">
@@ -819,7 +820,15 @@
 								<span class="year"></span>
 							</div>
 							<div class="description"></div>
+
 							<button class="moreBtn"></button>
+
+							<div class="moreDropdown">
+								<div class="moreLink behance">Behance</div>
+								<div class="moreLink github">GitHub</div>
+								<div class="moreLink demo">Try Demo</div>
+								<div class="moreLink live">View Live</div>
+							</div>
 						</div>
 					</a>
 				</div>
