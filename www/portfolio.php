@@ -826,8 +826,8 @@
 							<div class="moreDropdown">
 								<div class="moreLink behance">Behance</div>
 								<div class="moreLink github">GitHub</div>
-								<div class="moreLink demo">Try Demo</div>
-								<div class="moreLink live">View Live</div>
+								<div class="moreLink live">Live Demo</div>
+								<div class="moreLink video">Demo Video</div>
 							</div>
 						</div>
 					</a>

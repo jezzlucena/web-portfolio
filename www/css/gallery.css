@@ -85,10 +85,11 @@
           transition-delay: 1.5s;
         }
 
-          /* .gallery .item.triggered:hover .thumbContainer .thumb {
+          .gallery .item.triggered:hover .thumbContainer .thumb,
+          .gallery .item.triggered.touched .thumbContainer .thumb {
             opacity: 0;
             transition-delay: 0s;
-          } */
+          }
 
     .gallery .detailsContainer {
       position: relative;
@@ -181,7 +182,7 @@
           }
 
           .gallery .moreDropdown .moreLink {
-            padding: 15px 20px;
+            padding: 10px 20px;
             margin: 0;
           }
             .gallery .moreDropdown .moreLink:not(:last-child) {
@@ -190,10 +191,6 @@
 
             .gallery .moreDropdown .moreLink.disabled {
               color: #ddd;
-            }
-
-            .gallery .moreDropdown .moreLink:not(.disabled)::after {
-              content: ' \01F517';
             }
 
         .gallery .detailsContainer .name {
