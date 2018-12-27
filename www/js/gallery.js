@@ -207,8 +207,8 @@ function populatePortfolio() {
 
     $('body').click(closeDropdowns);
 
-    element.on('touchstart', function(event) {
-      closeDropdowns(event);
+    element.on('touchstart', function() {
+      closeDropdowns();
       element.addClass('touched');
     });
 
@@ -227,7 +227,9 @@ function closeDropdowns(event) {
     $('.gallery .moreDropdown.open').removeClass('open');
     $('.gallery .item.touched').removeClass('touched');
 
-    event.preventDefault();
-    event.stopPropagation();
+    if (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
   }
 }
