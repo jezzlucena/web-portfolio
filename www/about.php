@@ -4,13 +4,13 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>About Me</title>
 		<link rel="shortcut icon" href="favicon.ico" />
-		<meta name="description" content="TODO"/>
+		<meta name="description" content="A collection of screencaps, videos, and live demos of UI/UX projects programmed by Jezz Lucena."/>
 
 		<meta property="og:title" content="Portfolio - Jezz Lucena"/>
 		<meta property="og:url" content="http://jezzlucena.com/"/>
 		<meta property="og:image" content="http://jezzlucena.com/resource/common/profile.jpg"/>
 		<meta property="og:site_name" content="Portfolio - Jezz Lucena"/>
-		<meta property="og:description" content="TODO"/>
+		<meta property="og:description" content="A collection of screencaps, videos, and live demos of UI/UX projects programmed by Jezz Lucena."/>
 
 		<script type="text/javascript" src="http://www.youtube.com/iframe_api"></script>
 
