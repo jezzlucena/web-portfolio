@@ -32,6 +32,7 @@
 html, body {
 	height: 100%;
 	width: 100%;
+	min-width: 375px;
 	font-family: opensans;
 	font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
@@ -187,7 +188,7 @@ a:link, a:visited {
 	border-bottom: 1px solid transparent;
 	background-color: transparent;
 	color: white;
-	z-index: 100;
+	z-index: 102;
 	font-family: myriad-cond;
 	transition: 0.5s background-color ease, 0.5s border-bottom ease;
 }
@@ -196,9 +197,23 @@ a:link, a:visited {
 		border-bottom: 1px solid white;
 	}
 
+		.navCover {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: black;
+			pointer-events: none;
+			opacity: 0;
+			z-index: 101;
+			transition: 1s opacity ease;
+		}
+
 	.topBar .topBarContent {
 		position: relative;
 		width: 100%;
+		height: 100%;
 		max-width: 900px;
 		margin: 0 auto;
 	}
@@ -263,9 +278,64 @@ a:link, a:visited {
 							transition-delay: 0.5s;
 						}
 
+	@media(max-width: 800px) {
+		.topBar .topLogoText {
+			margin-top: 12px;
+			font-size: 18px;
+		}
+
+			.topBar .topLogoText .titleWrapper {
+				display: block;
+				margin-top: 2px;
+				padding-left: 0;
+				margin-left: 0;
+			}
+				.topBar .topLogoText .titleWrapper::after {
+					display: none;
+				}
+	}
+
+	.topBar .navIcon {
+		position: absolute;
+		display: none;
+		top: 47%;
+		right: 0;
+		height: 50px;
+		width: 40px;
+		transform: translateY(-50%);
+	}
+	@media(max-width: 800px) {
+		.topBar .navIcon {
+			display: block;
+		}
+	}
+
+		.topBar .navIcon .symbol {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			height: 18px;
+			width: 50%;
+			transform: translate(0, -50%);
+		}
+			.topBar .navIcon .symbol::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 4px;
+				background: white;
+				box-shadow:
+					0 7px 0 0 white,
+					0 14px 0 0 white;
+			}
+
 	.topBar .navContainer {
 		position: absolute;
-		top: 0; right: 10px;
+		top: 0;
+		right: 0;
+		padding-right: 10px;
 	}
 
 		.topBar .navContainer .topLink {
@@ -304,6 +374,42 @@ a:link, a:visited {
 				transform: translateY(-50%);
 			}
 
+		@media(max-width: 800px) {
+			.topBar .navContainer {
+				background-color: white;
+				top: 0;
+				padding: 10px 20px;
+				transform: translate(100%);
+				transition: 1s transform ease;
+			}
+				body.nav .navCover {
+					pointer-events: all;
+					opacity: 0.5;
+				}
+				body.nav .navContainer {
+					pointer-events: all;
+					transform: translate(0);
+				}
+
+				.topBar .navContainer .topLink {
+					display: block;
+					text-align: center;
+					color: black;
+					padding: 0 40px;
+					line-height: 50px;
+				}
+					.topBar .navContainer .topLink::before {
+						bottom: 10px;
+						left: 30px;
+						right: 30px;
+						background-color: black
+					}
+					.topBar .navContainer .topLink:not(:last-child)::after {
+						border-right: 0;
+						border-bottom: 1px solid black;
+					}
+		}
+
 .header {
 	position: fixed;
 	background-color: black;
@@ -319,13 +425,6 @@ a:link, a:visited {
 		background-image: url('../img/common/logo.jpg');
 	}
 
-	@media(max-width: 800px) {
-		.header {
-			position: absolute;
-			background-size: auto 60%;
-		}
-	}
-
 .headerContent {
 	position: relative;
 	width: 100%;
@@ -334,6 +433,21 @@ a:link, a:visited {
 }
 	body[data-page="portfolio"] .headerContent {
 		height: 75%;
+	}
+
+	@media(max-width: 800px) {
+		.header {
+			background-size: auto 60%;
+		}
+
+			body[data-page="portfolio"] .header {
+				height: 60%;
+				background-size: 80% auto;
+			}
+
+			body[data-page="portfolio"] .headerContent {
+				height: 60%;
+			}
 	}
 
 	.header.playing, .headerContent.playing {
@@ -363,7 +477,7 @@ a:link, a:visited {
 
 		@media(max-width: 800px) {
 			.headerContent .text {
-				bottom: 35%;
+				bottom: 0;
 				font-size: 14px;
 				letter-spacing: 4px;
 			}
@@ -633,6 +747,15 @@ a:link, a:visited {
 				line-height: 70px;
 			}
 
+			@media(max-width: 800px) {
+				.content .section .title.break {
+					text-align: left;
+				}
+					.content .section .title.break span {
+						margin-left: 10px;
+					}
+			}
+
 				.content .section .title.break .btn {
 				  position: absolute;
 					top: 50%;
@@ -688,7 +811,7 @@ a:link, a:visited {
 
 		.content .section .title.break .toggle {
 			position: absolute;
-			top: 50%;
+			top: 47%;
 			right: 10px;
 			transform-origin: right center;
 			transform: translateY(-50%) scale(1.2);
@@ -948,6 +1071,14 @@ a:link, a:visited {
 		fill: white;
 		opacity: 1;
 		transition: 5s fill ease, 1s opacity ease;
+	}
+
+	@media(max-width: 800px) {
+		.headerSvgContainer svg {
+			width: 80%;
+			height: auto;
+			top: 50%;
+		}
 	}
 
 @keyframes logoShimmer {

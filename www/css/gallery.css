@@ -7,7 +7,7 @@
   .gallery.grid {
     column-count: 3;
   }
-    @media(max-width: 800px) {
+    @media(max-width: 1000px) {
       .gallery.grid {
         column-count: 2;
       }
@@ -36,6 +36,12 @@
       cursor: pointer;
     }
 
+    @media(max-width: 600px) {
+      .gallery:not(.grid) .item {
+        padding: 10px;
+      }
+    }
+
     .gallery .thumbContainer {
       flex: none;
       position: relative;
@@ -46,6 +52,14 @@
       .gallery.grid .thumbContainer {
         margin-right: 0;
         margin-bottom: 10px;
+      }
+
+      @media(max-width: 600px) {
+        .gallery:not(.grid) .thumbContainer {
+          width: 136px;
+          height: 195px;
+          margin-right: 10px;
+        }
       }
 
       .gallery .thumbContainer .thumb,
@@ -156,6 +170,15 @@
             padding-right: 0;
           }
 
+        @media(max-width: 600px) {
+          .gallery .detailsContainer .name {
+            font-size: 14px;
+            line-height: 16px;
+            font-weight: bold;
+            padding-right: 0;
+          }
+        }
+
         .gallery .detailsContainer .subtitle {
           font-size: 13px;
           line-height: 18px;
@@ -193,7 +216,7 @@
   animation-name: placeHolderShimmer;
   animation-timing-function: linear;
   background: #f6f7f8;
-  background: linear-gradient(to right, #f4f4f4 8%, #eee 38%, #f4f4f4 54%);
+  background: linear-gradient(to right, #f4f4f4 8%, #ddd 38%, #f4f4f4 54%);
   background-size: 1000px 640px;
   position: relative;
 }

@@ -10,6 +10,10 @@ const SHIMMER_RAINBOW_2 = "SHIMMER_RAINBOW_2";
 Main.onLoad = function(){
 	$('.headerContent').addClass('loaded');
 
+	$('.navIcon, .navCover').click(function(){
+		$('body').toggleClass('nav');
+	});
+
 	$('.readMoreContainer').click(function(){
 		$(this).closest('.textContainer').toggleClass('collapsed');
 	});
