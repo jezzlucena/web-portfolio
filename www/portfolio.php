@@ -19,7 +19,7 @@
 
 		<script type="text/javascript" charset="UTF-8" src="js/gallery.js"></script>
 	</head>
-	<body data-page="portfolio" onload="Main.onLoad();" onunload="Main.onUnload();">
+	<body data-page="portfolio">
 		<?php include 'topbar.php' ?>
 
 		<div class="header">

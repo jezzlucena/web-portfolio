@@ -7,6 +7,8 @@ const SHIMMER_RANDOM = "SHIMMER_RANDOM";
 const SHIMMER_RAINBOW_1 = "SHIMMER_RAINBOW_1";
 const SHIMMER_RAINBOW_2 = "SHIMMER_RAINBOW_2";
 
+$(document).ready(() => { Main.onLoad() });
+
 Main.onLoad = function(){
 	$('.headerContent').addClass('loaded');
 
@@ -26,10 +28,18 @@ Main.onLoad = function(){
 		Main.triggerScrollClasses();
 	});
 
-	Main.triggerScrollClasses();
+	if ($('body').attr('data-page') == 'project') {
+		$('.projectButtons .button').each(function() {
+			if (!$(this).attr('href')) {
+				$(this).remove();
+				$('.projectButtons').append(this);
+			}
+		});
+	}
 
 	setTimeout(() => {
 		animateSVGs(SHIMMER_RAINBOW_2);
+		Main.triggerScrollClasses();
 	}, 10);
 };
 
@@ -82,6 +92,32 @@ function animateSVGs (mode) {
 
 	if (mode == SHIMMER_RAINBOW_1 || mode == SHIMMER_RAINBOW_2) {
 		$('.headerSvgContainer svg').css('opacity', 1);
+
+		if (mode == SHIMMER_RAINBOW_2) {
+
+
+			cycle = 1;
+
+			setInterval(() => {
+				$('.headerSvgContainer path').each(function(index) {
+					if (cycle == 0) {
+						var color = getRandomColor();
+
+						$(this).css('fill', color)
+							.css('stroke', color)
+							.css('opacity', 1);
+					} else if (cycle == 1) {
+						$(this).css('opacity', 0);
+					} else if (cycle == 2) {
+						$(this).css('fill', 'white')
+							.css('stroke', 'black')
+							.css('opacity', 1);
+					}
+				});
+
+				cycle = (cycle + 1) % 3;
+			}, 4000);
+		}
 	} else {
 		$('.headerSvgContainer svg path').css('animation', '100s logoShimmer infinite');
 	}
@@ -116,30 +152,15 @@ function animateSVGs (mode) {
 			delayAcc += 0.005;
 			delay = delayAcc;
 
-			let cycle = 0;
+			var color = getRandomColor();
 
 			$(this)
 				.css('animation', 'none')
 				.css('opacity', 1)
 				.css('transition-duration', (Math.random() * 2) + "s")
 				.css('transition-delay', delay + "s")
-				.css('fill', getRandomColor());
-
-			cycle = 1;
-
-			setInterval(() => {
-				if (cycle == 0) {
-					$(this).css('fill', getRandomColor())
-						.css('opacity', 1);
-				} else if (cycle == 1) {
-					$(this).css('opacity', 0);
-				} else if (cycle == 2) {
-					$(this).css('fill', 'white')
-						.css('opacity', 1);
-				}
-
-				cycle = (cycle + 1) % 3;
-			}, 4000);
+				.css('stroke', color)
+				.css('fill', color);
 		} else {
 			if (Math.random() > 0.4) {
 				$(this).css('display', 'none');

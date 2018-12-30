@@ -16,7 +16,7 @@
 
 		<?php include 'head_imports.php'; ?>
 	</head>
-	<body data-page="contact" onload="Main.onLoad();" onunload="Main.onUnload();">
+	<body data-page="contact">
 		<?php include 'topbar.php' ?>
 
 		<div class="header"></div>

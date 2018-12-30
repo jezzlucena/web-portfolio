@@ -27,7 +27,7 @@
 
 		<?php include 'head_imports.php'; ?>
 	</head>
-	<body data-page="project" onload="Main.onLoad();" onunload="Main.onUnload();">
+	<body data-page="project">
 		<?php include 'topbar.php' ?>
 
 		<div class="header"></div>
@@ -38,32 +38,32 @@
 		</div>
 
 		<div class="content">
-			<div id="about" class="section about">
+			<div id="project" class="section project">
 				<div class="textContainer">
 					<img src="<?= $project['thumb_gif_url'] ?>" class="projectPicture">
 
 					<div class="description">
 						<div class="projectName">
-							<span class="label">Project:</span>
+							<span class="label">Project</span>
 							<?= $project['project_name'] ?>
 						</div>
 						<div class="projectCompany">
-							<span class="label">Company:</span>
+							<span class="label">Company</span>
 							<?= $project['company_name'] ?>
 						</div>
 						<div class="projectYear">
-							<span class="label">Shipped in: </span>
+							<span class="label">Shipped in</span>
 							<?= $project['project_year'] ?>
 						</div>
 						<div class="projectRole">
-							<span class="label">Role on this project: </span>
+							<span class="label">Role on this project</span>
 							<?= $project['role'] ?>
 						</div>
 
-						<br><br>
+						<br>
 
 						<span class="keywords">
-							<span class="label">Stack: </span>
+							<span class="label big">Stack</span>
 							<span class="keyword">JavaScript</span>,
 							<span class="keyword">ES6</span>,
 							<span class="keyword">HTML5</span>,
@@ -77,12 +77,12 @@
 							<span class="keyword">i18n</span>
 						</span>
 
-						<br><br>
+						<br>
 
 						<div class="projectButtons">
-							<span class="label big">Related Links</span><br>
+							<span class="label">Related Links</span>
 
-							<a href="<?= $project['behance_url'] ?>" target="_blank" class="button ">View on Behance</a>
+							<a href="<?= $project['behance_url'] ?>" target="_blank" class="button">View on Behance</a>
 							<a href="<?= $project['github_url'] ?>" target="_blank" class="button">View on GitHub</a>
 							<a href="<?= $project['live_url'] ?>" target="_blank" class="button">Try Live</a>
 							<a href="<?= $project['video_url'] ?>" target="_blank" class="button">Watch Video</a>
