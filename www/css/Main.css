@@ -94,6 +94,12 @@ a:link, a:visited {
 	cursor: pointer;
 	transition: all 0.2s linear;
 }
+	a.button[href=""], a.button[href="#"] {
+		opacity: 0.5;
+	}
+		a.button[href=""]:active, a.button[href="#"]:active {
+			pointer-events: none;
+		}
 
 	.content .button:hover {
 		box-shadow: 7px 7px 0 -1px rgba(0, 0, 0, 1);
@@ -192,7 +198,8 @@ a:link, a:visited {
 	font-family: myriad-cond;
 	transition: 0.5s background-color ease, 0.5s border-bottom ease;
 }
-	.scrolled .topBar {
+	.scrolled .topBar,
+	body:not([data-page="portfolio"]) .topBar {
 		background-color: black;
 		border-bottom: 1px solid white;
 	}
@@ -414,21 +421,27 @@ a:link, a:visited {
 	position: fixed;
 	background-color: black;
 	height: 25%;
+	min-height: 180px;
 	width: 100%;
 	transition: all 1s linear;
+	background-image: url('../img/common/logo.jpg');
+	background-size: auto 150%;
+	background-repeat: no-repeat;
+	background-position: 50% 25%;
+	opacity: 0.5;
 }
 	body[data-page="portfolio"] .header {
 		height: 75%;
 		background-size: auto 60%;
-		background-repeat: no-repeat;
 		background-position: 50% 50%;
-		background-image: url('../img/common/logo.jpg');
+		opacity: 1;
 	}
 
 .headerContent {
 	position: relative;
 	width: 100%;
 	height: 25%;
+	min-height: 180px;
 	transition: all 1s linear;
 }
 	body[data-page="portfolio"] .headerContent {
@@ -436,23 +449,14 @@ a:link, a:visited {
 	}
 
 	@media(max-width: 800px) {
-		.header {
-			height: 22%;
-			background-size: auto 60%;
+		body[data-page="portfolio"] .header {
+			height: 70%;
+			background-size: 80% auto;
 		}
 
-		.headerContent {
-			height: 22%;
+		body[data-page="portfolio"] .headerContent {
+			height: 70%;
 		}
-
-			body[data-page="portfolio"] .header {
-				height: 60%;
-				background-size: 80% auto;
-			}
-
-			body[data-page="portfolio"] .headerContent {
-				height: 60%;
-			}
 	}
 
 	.header.playing, .headerContent.playing {
@@ -576,6 +580,12 @@ a:link, a:visited {
 		margin-right: 5px;
 		font-size: 14px;
 	}
+		.content .section .label.big {
+			margin-right: 0;
+			font-size: 26px;
+			font-family: myriad-boldcond;
+			text-transform: uppercase;
+		}
 
 	.content .section .coverContainer {
 		width: 48%;
@@ -588,7 +598,7 @@ a:link, a:visited {
 		width: 100%;
 		max-height: 2000px;
 		transition: 1s max-height ease;
-		padding-bottom: 50px;
+		padding-bottom: 10px;
 	}
 		.content .section .textContainer.collapsed {
 			max-height: 100px;
@@ -676,11 +686,21 @@ a:link, a:visited {
 					margin-left: 5px;
 				}
 
-
 			.content .section .profileButtons .button:first-child {
 				margin-left: 0;
 				margin-top: 20px;
 			}
+
+			.content .section .projectButtons {
+				margin: 20px auto 0;
+				text-align: center;
+			}
+				@media(max-width: 800px) {
+					.content .section .projectButtons .button {
+						display: block;
+						margin: 10px auto;
+					}
+				}
 
 		.content .section .profilePicture {
 			float: left;
@@ -706,6 +726,16 @@ a:link, a:visited {
 				background-image: url("../img/common/cover.jpg");
 				background-size: cover;
 			}
+
+		.content .section .projectPicture {
+			position: relative;
+			display: block;
+			margin: 0 auto 30px;
+			width: 100%;
+			height: auto;
+			border: 1px solid black;
+			border-radius: 5px;
+		}
 
 		@media(max-width: 800px) {
 			.content .section .coverContainer {

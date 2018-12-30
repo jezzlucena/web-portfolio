@@ -25,7 +25,14 @@
     padding: 20px;
     break-inside: avoid-column;
     margin-bottom: 20px;
+    opacity: 0;
+    transition: 0.5s opacity ease;
   }
+    .gallery .item.triggered {
+      opacity: 1;
+      transition-delay: 0.5s;
+    }
+
     .gallery .item.template {
       display: none;
     }
@@ -126,7 +133,8 @@
         .content .section .item:hover .moreBtn {
           opacity: 0.5;
         }
-        .content .section .item:hover .moreBtn:hover {
+        .content .section .item:hover .moreBtn:hover,
+        .content .section .item.touched .moreBtn {
           opacity: 0.9;
         }
         .gallery .moreBtn:focus:active::before {
@@ -153,7 +161,7 @@
           box-shadow: 0 0 0 2px black, 0 11px 0 2px black, 0 -11px 0 2px black;
         }
 
-        @media(max-width: 600px) {
+        @media(max-width: 800px) {
           .gallery .moreBtn {
             opacity: 0.7;
             background-color: transparent;
