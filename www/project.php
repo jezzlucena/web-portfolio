@@ -79,7 +79,7 @@
 
 							<a href="<?= $project['behance_url'] ?>" target="_blank" class="button">View on Behance</a>
 							<a href="<?= $project['github_url'] ?>" target="_blank" class="button">View on GitHub</a>
-							<a href="<?= $project['live_url'] ?>" target="_blank" class="button">Try Live</a>
+							<a href="<?= $project['live_url'] ?>" target="_blank" class="button">Try Live Demo</a>
 							<a href="<?= $project['video_url'] ?>" target="_blank" class="button">Watch Video</a>
 						</div>
 					</div>
