@@ -68,12 +68,7 @@
 							<span class="keyword">ES6</span>,
 							<span class="keyword">HTML5</span>,
 							<span class="keyword">CSS3</span>,
-							<span class="keyword">Ruby on Rails</span>,
-							<span class="keyword">React.js</span>,
-							<span class="keyword">Redux</span>,
-							<span class="keyword">Agile Software Engineering</span>,
 							<span class="keyword">UX/UI Design</span>,
-							<span class="keyword">REST APIs</span>,
 							<span class="keyword">i18n</span>
 						</span>
 
