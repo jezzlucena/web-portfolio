@@ -40,7 +40,11 @@
 		<div class="content">
 			<div id="project" class="section project">
 				<div class="textContainer">
-					<img src="<?= $project['thumb_gif_url'] ?>" class="projectPicture">
+					<? if ($project['thumb_video_url']) { ?>
+						<video src="<?= $project['thumb_video_url'] ?>" class="projectPicture" autoplay="autoplay" muted playsinline loop></video>
+					<? } else { ?>
+						<img src="<?= $project['thumb_static_url'] ?>" class="projectPicture">
+					<? } ?>
 
 					<div class="description">
 						<div class="projectName">
@@ -64,12 +68,20 @@
 
 						<span class="keywords">
 							<span class="label big">Stack</span>
-							<span class="keyword">JavaScript</span>,
-							<span class="keyword">ES6</span>,
-							<span class="keyword">HTML5</span>,
-							<span class="keyword">CSS3</span>,
-							<span class="keyword">UX/UI Design</span>,
-							<span class="keyword">i18n</span>
+
+							<?php foreach(explode(',', $project['stack']) as $key=>$value): ?>
+								<span class="keyword"><?php echo $value; ?></span>,
+					    <?php endforeach; ?>
+						</span>
+
+						<br>
+
+						<span class="keywords">
+							<span class="label big">Platforms</span>
+
+							<?php foreach(explode(',', $project['platforms']) as $key=>$value): ?>
+								<span class="keyword"><?php echo $value; ?></span>,
+					    <?php endforeach; ?>
 						</span>
 
 						<br>
@@ -80,7 +92,7 @@
 							<a href="<?= $project['behance_url'] ?>" target="_blank" class="button">View on Behance</a>
 							<a href="<?= $project['github_url'] ?>" target="_blank" class="button">View on GitHub</a>
 							<a href="<?= $project['live_url'] ?>" target="_blank" class="button">Try Live Demo</a>
-							<a href="<?= $project['video_url'] ?>" target="_blank" class="button">Watch Video</a>
+							<a href="<?= $project['video_url'] ?>" target="_blank" class="button">Watch Full Video</a>
 						</div>
 					</div>
 				</div>

@@ -25,7 +25,13 @@ function populatePortfolio() {
     element.find('.role').html(item.role);
     element.find('.year').html(item.project_year);
     element.find('.thumb').attr('src', item.thumb_static_url);
-    element.find('.thumbGif').attr('src', item.thumb_gif_url);
+
+    if (item.thumb_video_url) {
+      element.find('.thumbVideo').attr('src', item.thumb_video_url);
+    } else {
+      element.addClass('noVideo');
+    }
+
     element.find('.description').html(item.description);
     element.attr('href', `project.php?p=${item.token}`);
     element.find('.moreLink.details').attr('data-url', `project.php?p=${item.token}`);

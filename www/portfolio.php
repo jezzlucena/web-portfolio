@@ -48,7 +48,7 @@
 				<div class="gallery grid loading">
 					<a href="#" class="item trigger template">
 						<div class="thumbContainer loadingGradient">
-							<img class="thumbGif"></img>
+							<video class="thumbVideo" autoplay="autoplay" muted playsinline loop></video>
 							<img class="thumb"></img>
 						</div>
 
