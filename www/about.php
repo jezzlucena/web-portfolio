@@ -33,7 +33,7 @@
 					<div class="description">
 						<a class="profilePicture Jezz" target="_blank" href="http://linkedin.com/in/jezzlucena"></a>
 						<div class="profileName">Jezz Lucena</div>
-						<div class="profileTitle">Front-End Software Engineer</div>
+						<div class="profileTitle">Full Stack Software Engineer</div>
 						<span class="keywords">
 							<span class="label">Keywords: </span>
 							<span class="keyword">JavaScript</span>,
