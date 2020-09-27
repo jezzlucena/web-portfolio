@@ -26,6 +26,57 @@
   $db->exec($sql);
 
   $db->insert(
+    "Burning Man: Multiverse",
+    "multiverse",
+    "Celestial Bodies Camp",
+    "2020",
+    "Independent Collaborator",
+    "iOS,Android,Desktop,Web",
+    "JavaScript,ES6,HTML5,CSS3",
+    "A socialy distanced and virtual 2020 simulation of what would happen on Playa.",
+    "/img/portfolio/multiverse/multiverse_thumb.jpg",
+    "/img/portfolio/multiverse/multiverse_thumb.mp4",
+    NULL,
+    NULL,
+    "https://youtu.be/3pFpoWLe2MQ",
+    NULL,
+    "https://multiverse.campcelestialbodies.org/"
+  );
+
+  $db->insert(
+    "Climatempo Weather Forecast",
+    "climatempo",
+    "HXD Smart Solutions",
+    "2012",
+    "Full Stack Engineer (Intern)",
+    "Samsung SmartTV OS,LG SmartTV OS,Web",
+    "JavaScript,XML,JSON,ES6,HTML5,CSS3,UX/UI Design,i18n",
+    "The leading weather forecast cross-platform app in Brazil",
+    "/img/portfolio/climatempo/climatempo_thumb.jpg",
+    NULL,
+    "/img/portfolio/climatempo/climatempo_0.gif",
+    "https://www.behance.net/gallery/74097271/Climatempo-Weather-Forecast",
+    NULL, NULL, NULL
+  );
+
+  $db->insert(
+    "Dell OME Training Game",
+    "dell",
+    "Kaon Interactive",
+    "2018",
+    "Lead Full Stack Engineer (Contract)",
+    "iOS,Android,Desktop,Web",
+    "WebSockets,SQLite,JavaScript,ES6,HTML5,CSS3,UX/UI Design,i18n",
+    "Dell's gamified experience to showcase their cutting-edge corporate server deployment application",
+    "/img/portfolio/dell/dell_thumb.jpg",
+    "/img/portfolio/dell/dell_thumb.mp4",
+    "/img/portfolio/dell/dell_0.gif",
+    "https://www.behance.net/gallery/74097417/Dell-OME-Gamified-Experience",
+    "https://youtu.be/McDy33GSPUM",
+    NULL, NULL
+  );
+
+  $db->insert(
     "Thermo Fisher - Precision Medicine",
     "thermofisher",
     "Kaon Interactive",
@@ -60,20 +111,21 @@
   );
 
   $db->insert(
-    "Dell OME Training Game",
-    "dell",
-    "Kaon Interactive",
-    "2018",
-    "Lead Full Stack Engineer (Contract)",
+    "Strike A Pose",
+    "strikeapose",
+    "Personal Project",
+    "2020",
+    "Lead Game Designer & Engineer",
     "iOS,Android,Desktop,Web",
-    "WebSockets,SQLite,JavaScript,ES6,HTML5,CSS3,UX/UI Design,i18n",
-    "Dell's gamified experience to showcase their cutting-edge corporate server deployment application",
-    "/img/portfolio/dell/dell_thumb.jpg",
-    "/img/portfolio/dell/dell_thumb.mp4",
-    "/img/portfolio/dell/dell_0.gif",
-    "https://www.behance.net/gallery/74097417/Dell-OME-Gamified-Experience",
-    "https://youtu.be/McDy33GSPUM",
-    NULL, NULL
+    "JavaScript,ES6,HTML5,CSS3,UX/UI Design,Heroku",
+    "A dystopian rhythm action-adventure video game, but make it fashion.",
+    "/img/portfolio/strikeapose/strikeapose_thumb.jpg",
+    "/img/portfolio/strikeapose/strikeapose_thumb.mp4",
+    NULL,
+    NULL,
+    "https://youtu.be/47Et5PvKTwA",
+    NULL,
+    "https://strike-a-pose.herokuapp.com/"
   );
 
   $db->insert(
@@ -146,19 +198,21 @@
   );
 
   $db->insert(
-    "Climatempo Weather Forecast",
-    "climatempo",
-    "HXD Smart Solutions",
-    "2012",
-    "Full Stack Engineer (Intern)",
-    "Samsung SmartTV OS,LG SmartTV OS,Web",
-    "JavaScript,XML,JSON,ES6,HTML5,CSS3,UX/UI Design,i18n",
-    "The leading weather forecast cross-platform app in Brazil",
-    "/img/portfolio/climatempo/climatempo_thumb.jpg",
+    "Photobooth",
+    "photobooth",
+    "Personal Project",
+    "2019",
+    "Lead Designer & Engineer",
+    "iOS,Android,Desktop,Web",
+    "JavaScript,ES6,HTML5,CSS3,UX/UI Design,i18n",
+    "A web application that snaps a picture when you smile. Machine Learning, AI, and Material Design included.",
+    "/img/portfolio/photobooth/photobooth_thumb.jpg",
+    "/img/portfolio/photobooth/photobooth_thumb.mp4",
     NULL,
-    "/img/portfolio/climatempo/climatempo_0.gif",
-    "https://www.behance.net/gallery/74097271/Climatempo-Weather-Forecast",
-    NULL, NULL, NULL
+    NULL,
+    "https://youtu.be/BFaIBVqL3uA",
+    NULL,
+    "https://face-api-photobooth.herokuapp.com/"
   );
 
   $db->insert(
