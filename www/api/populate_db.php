@@ -38,7 +38,7 @@
     "/img/portfolio/multiverse/multiverse_thumb.mp4",
     NULL,
     NULL,
-    "https://youtu.be/3pFpoWLe2MQ",
+    "https://youtu.be/niPZFy9t9b0",
     NULL,
     "https://multiverse.campcelestialbodies.org/"
   );
@@ -123,7 +123,7 @@
     "/img/portfolio/strikeapose/strikeapose_thumb.mp4",
     NULL,
     NULL,
-    "https://youtu.be/47Et5PvKTwA",
+    "https://youtu.be/zbpl4O8iWtE",
     NULL,
     "https://strike-a-pose.herokuapp.com/"
   );
@@ -210,7 +210,7 @@
     "/img/portfolio/photobooth/photobooth_thumb.mp4",
     NULL,
     NULL,
-    "https://youtu.be/BFaIBVqL3uA",
+    "https://youtu.be/N8bxdOAP8Aw",
     NULL,
     "https://face-api-photobooth.herokuapp.com/"
   );
