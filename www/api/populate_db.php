@@ -229,7 +229,7 @@
     "/img/portfolio/in-a-haystack/haystack_0.gif",
     "https://www.behance.net/gallery/74097641/In-a-Haystack",
     NULL, NULL,
-    "http://www.jezzlucena.com/haystackgame/"
+    "http://www.jezzlucena.com/in-a-haystack/"
   );
 
   $db->insert(
