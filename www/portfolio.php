@@ -30,14 +30,14 @@
 		<div class="headerContent">
 			<div class="text">
 				<span>Jezz Lucena</span>
-				<span class="title">Full Stack Engineer</span>
+				<span class="title">User Interface Engineer</span>
 			</div>
 		</div>
 
 		<div class="content">
 			<div id="about" class="section portfolio">
 				<div class="title break">
-					<span>Some of my latest work</span>
+					<span>Some of my work</span>
 
 					<div class="toggle grid">
 						<div class="icon grid"><div class="symbol"></div></div>

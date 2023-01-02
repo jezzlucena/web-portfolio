@@ -7,7 +7,16 @@ const SHIMMER_RANDOM = "SHIMMER_RANDOM";
 const SHIMMER_RAINBOW_1 = "SHIMMER_RAINBOW_1";
 const SHIMMER_RAINBOW_2 = "SHIMMER_RAINBOW_2";
 
+const MAX_COMPUTED_COLORS = 474;
+var GLOBAL_COLOR_INDEX = 0;
+
 $(document).ready(() => { Main.onLoad() });
+
+Main.computedColors = [];
+
+for(let i = 0; i < MAX_COMPUTED_COLORS; i++) {
+	Main.computedColors.push(getRandomColor());
+}
 
 Main.onLoad = function(){
 	$('.headerContent').addClass('loaded');
@@ -41,9 +50,6 @@ Main.onLoad = function(){
 		animateSVGs(SHIMMER_RAINBOW_2);
 		Main.triggerScrollClasses();
 	}, 10);
-};
-
-Main.onUnload = function(){
 };
 
 Main.isDevice = function(){
@@ -87,6 +93,11 @@ function getRandomColor() {
   return color;
 }
 
+function getComputedColor() {
+	GLOBAL_COLOR_INDEX = (GLOBAL_COLOR_INDEX + 1) % MAX_COMPUTED_COLORS;
+	return Main.computedColors[GLOBAL_COLOR_INDEX];
+}
+
 function animateSVGs (mode) {
 	let delayAcc = 0;
 
@@ -94,14 +105,12 @@ function animateSVGs (mode) {
 		$('.headerSvgContainer svg').css('opacity', 1);
 
 		if (mode == SHIMMER_RAINBOW_2) {
-
-
 			cycle = 1;
 
 			setInterval(() => {
 				$('.headerSvgContainer path').each(function(index) {
 					if (cycle == 0) {
-						var color = getRandomColor();
+						var color = getComputedColor();
 
 						$(this).css('fill', color)
 							.css('stroke', color)
@@ -143,16 +152,16 @@ function animateSVGs (mode) {
 				.css('opacity', 1)
 				.css('transition-duration', (Math.random() * 2) + "s")
 				.css('transition-delay', delay + "s")
-				.css('fill', getRandomColor());
+				.css('fill', getComputedColor());
 
 			setInterval(() => {
-				$(this).css('fill', getRandomColor())
+				$(this).css('fill', getComputedColor())
 			}, 3500);
 		} else if (mode == SHIMMER_RAINBOW_2) {
 			delayAcc += 0.005;
 			delay = delayAcc;
 
-			var color = getRandomColor();
+			var color = getComputedColor();
 
 			$(this)
 				.css('animation', 'none')
