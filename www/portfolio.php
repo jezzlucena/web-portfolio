@@ -30,7 +30,7 @@
 		<div class="headerContent">
 			<div class="text">
 				<span>Jezz Lucena</span>
-				<span class="title">User Interface Engineer</span>
+				<span class="title">Front-End Engineer</span>
 			</div>
 		</div>
 
