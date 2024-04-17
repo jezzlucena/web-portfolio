@@ -13,7 +13,7 @@
     <div class="navContainer">
       <a class="topLink" href="/about.php" data-page="about">About</a>
       <a class="topLink" href="/" data-page="portfolio">Portfolio</a>
-      <a class="topLink" href="/resource/JezzLucenaResume2022.pdf" target="_blank" data-page="resume">Resumé</a>
+      <a class="topLink" href="/resource/JezzLucenaResume2024.pdf" target="_blank" data-page="resume">Resumé</a>
       <a class="topLink" href="/contact.php" data-page="contact">Contact</a>
     </div>
   </div>
